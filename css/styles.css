@@ -166,6 +166,14 @@ header .navbar-brand img{
     width: 106px;
         height: 106px;
 }
+.navbar-toggler {
+    border: 2px solid white;
+    outline:none !important;
+    box-shadow: none !important;
+    position: absolute;
+        right: 12px;
+        top: 42px;
+}
 header ul li a{
     font-size: 26px !important;
         letter-spacing: -1px;
@@ -184,7 +192,32 @@ header ul li a{
                     .navbar>.container{
             align-items: self-start;
     }
+    
 } 
+@media(max-width:767px){
+    header .tagline {
+        padding: 0 12px;
+    }
+        .navbar .inner {
+            width: 100%
+        }
+        .navbar-collapse {
+            flex-basis: 100%;
+            flex-grow: 1;
+            align-items: center;
+            margin: 8px -12px;
+            padding: 12px;
+            background: white;
+        }
+        header ul li a {
+            color: #000000 !important;
+            font-size: 20px !important;
+        }
+        header {
+            height: 100vh;
+            background-position: 65%;
+        }
+}
 /* about */
 #about .left_bg{
     background: url("../imgs/bplaceholder.png") center center no-repeat;
@@ -221,6 +254,16 @@ header ul li a{
 #featured .inner_details p{
     padding-top: 50px;
 }
+@media(max-width:767px){
+    #about .left_bg {
+        height: 412px;
+    }
+    #about .inner_details,
+    #promotion .inner_details,
+    #featured .inner_details {
+        padding: 50px 12px;
+    }
+}
 /* review */
 #review{
     padding: 165px 0;
@@ -240,6 +283,15 @@ header ul li a{
     color: #000000;
     font-weight: 400;
     text-align: center;
+}
+@media(max-width:767px) {
+    #review {
+        padding: 50px 0;
+    }
+    #review .review h3,
+    #review .review .h3 {
+        font-size: 40px !important;
+    }
 }
 /* feminine_curves */
 #feminine_curves .inner{
@@ -273,6 +325,15 @@ header ul li a{
         font-family: "Lato";
         padding-left: 50px;
 }
+@media(max-width:767px){
+    #feminine_curves .inner.left {
+        margin-bottom: 20px;
+    }
+    #feminine_curves .inner.right .details {
+        padding: 50px 12px;
+    }
+}
+
 /* fullwidth_bg */
 .fullwidth_bg{
     height: 1041px;
@@ -315,12 +376,23 @@ header ul li a{
 .fullwidth_bg a:hover{
     text-decoration: underline;
 }
+@media(max-width:767px){
+    .fullwidth_bg {
+        height: 100vh;
+    }
+}
 /* promotion */
 #promotion .left_bg {
     background: url("../imgs/gplaceholder.png") center center no-repeat;
     background-size: cover;
     height: 712px;
     margin:170px 0;
+}
+@media(max-width:767px) {
+    #promotion .left_bg {
+        margin: 50px 0 0;
+        height:412px
+    }
 }
 /* mommy_makeover */
 .mommy_makeover{
@@ -330,9 +402,19 @@ header ul li a{
 .skin_tightening .inner_detail_box h1 {
     font-size: 68px !important;
 }
+@media(max-width:767px) {
+    .mommy_makeover {
+        background-position: 85% 0 !important;
+    }
+}
 /* bbl */
 .bbl{
     background: url('../imgs/bbl_bg.png') center center no-repeat;
+}
+@media(max-width:767px) {
+    .bbl {
+        background-position: 75% 0 !important;
+    }
 }
 /* featured */
 #featured  {
@@ -342,6 +424,14 @@ header ul li a{
     background: url("../imgs/gplaceholder.png") center center no-repeat;
     height: 712px;
 }
+@media(max-width:767px) {
+    #featured {
+        margin: 50px 0 0;
+    }
+    #featured .left_bg {
+        height: 412px
+    }
+}
 /* skin_tightening */
 .skin_tightening{
     background: url('../imgs/skin_tightening_bg.png') center center no-repeat;
@@ -349,6 +439,11 @@ header ul li a{
 /* body_contour */
 .body_contour{
     background: url('../imgs/body_contour_bg.png') center center no-repeat;
+}
+@media(max-width:767px) {
+    .body_contour {
+        background-position: 80% 0 !important;
+    }
 }
 /* facelift */
 .facelift{
@@ -389,6 +484,20 @@ height: 589px;
     background-color: #000000;
     border: 1px solid #bec4c1;
 }
+@media(max-width:767px) {
+    .signup {
+        padding: 50px 0 !important;
+    }
+    .signup .detail {
+        height: auto;
+        padding: 50px 30px;
+    }
+    .signup .form_wrapper {
+        height: auto;
+        padding: 50px 12px;
+    }
+}
+/* contact */
 .contact{
     height: 1037px;
     background-color: #dcdee2;
@@ -430,6 +539,14 @@ height: 589px;
 }
 .contact .inner form .btn-dafault {
     background-color: #000 !important;
+}
+@media(max-width:767px){
+    .contact .inner h2 {
+        margin-bottom: 50px;
+    }
+    .contact {
+        height: auto;
+    }
 }
 /* footer */
 footer{
@@ -479,4 +596,21 @@ footer .copyright{
     color: #ffffff;
     font-weight: 400;
     font-family: "Lato";
+}
+@media(max-width:767px){
+    footer {
+        height: auto;
+        padding:50px 12px;
+    }
+    footer .logo {
+        margin-bottom: 50px;
+    }
+    footer ul {
+        margin-bottom: 50px !important;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    footer .copyright {
+        line-height: 25px;
+    }
 }
