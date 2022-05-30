@@ -380,6 +380,9 @@ header ul li a{
     .fullwidth_bg {
         height: 100vh;
     }
+    .fullwidth_bg .inner_detail_box {
+        padding: 40px;
+    }
 }
 /* promotion */
 #promotion .left_bg {
