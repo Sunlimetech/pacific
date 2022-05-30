@@ -198,25 +198,25 @@ header ul li a{
     header .tagline {
         padding: 0 12px;
     }
-        .navbar .inner {
-            width: 100%
-        }
-        .navbar-collapse {
-            flex-basis: 100%;
-            flex-grow: 1;
-            align-items: center;
-            margin: 8px -12px;
-            padding: 12px;
-            background: white;
-        }
-        header ul li a {
-            color: #000000 !important;
-            font-size: 20px !important;
-        }
-        header {
-            height: 100vh;
-            background-position: 65%;
-        }
+    .navbar .inner {
+        width: 100%
+    }
+    .navbar-collapse {
+        flex-basis: 100%;
+        flex-grow: 1;
+        align-items: center;
+        margin: 8px -12px;
+        padding: 12px;
+        background: white;
+    }
+    header ul li a {
+        color: #000000 !important;
+        font-size: 20px !important;
+    }
+    header {
+        height: 100vh;
+        background-position: 65%;
+    }
 }
 /* about */
 #about .left_bg{
