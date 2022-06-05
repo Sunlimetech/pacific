@@ -181,6 +181,9 @@ header ul li a{
         font-weight: 300;
         font-family: "Lato";
 }
+header ul li a span{
+        position: relative;
+}
 @media (min-width: 992px){
     .navbar-expand-lg .navbar-nav {
     flex-direction: column;
@@ -372,16 +375,27 @@ header ul li a{
     color: #ffffff;
     font-weight: 300;
     font-family: "Lato";
+    position: relative;
 }
-.fullwidth_bg a:hover{
-    text-decoration: underline;
+.fullwidth_bg a::after, header .navbar ul li a span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0%;
+    border-bottom: 2px solid;
+}
+.fullwidth_bg a:hover::after,
+header .navbar ul li a:hover span::after{
+    width: 100%;
 }
 @media(max-width:767px){
     .fullwidth_bg {
         height: 100vh;
     }
     .fullwidth_bg .inner_detail_box {
-        padding: 40px;
+        padding: 20px;
     }
 }
 /* promotion */
@@ -498,6 +512,9 @@ height: 589px;
     .signup .form_wrapper {
         height: auto;
         padding: 50px 12px;
+    }
+    .signup .detail h1 {
+        font-size: 50px;
     }
 }
 /* contact */
