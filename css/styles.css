@@ -320,13 +320,16 @@ header ul li a span{
     font-weight: 400;
     font-family: "Bebas Neue";
 }
-#feminine_curves .inner.right .details ul li{
+#feminine_curves .inner.right .details ul li a{
     font-size: 30px;
         line-height: 48px;
         color: #ffffff;
         font-weight: 400;
         font-family: "Lato";
         padding-left: 50px;
+}
+#feminine_curves .inner.right .details ul li a span{
+        position: relative;
 }
 @media(max-width:767px){
     #feminine_curves .inner.left {
@@ -377,7 +380,10 @@ header ul li a span{
     font-family: "Lato";
     position: relative;
 }
-.fullwidth_bg a::after, header .navbar ul li a span::after{
+.fullwidth_bg a::after, 
+header .navbar ul li a span::after, 
+#feminine_curves .inner .details ul li a span::after,
+footer ul li a::after{
     content: "";
     position: absolute;
     left: 0;
@@ -387,7 +393,9 @@ header ul li a span{
     border-bottom: 2px solid;
 }
 .fullwidth_bg a:hover::after,
-header .navbar ul li a:hover span::after{
+header .navbar ul li a:hover span::after,
+#feminine_curves .inner .details ul li a:hover span::after,
+ footer ul li a:hover::after{
     width: 100%;
 }
 @media(max-width:767px){
@@ -601,7 +609,8 @@ footer ul p{
     
 }
 footer ul li a{
-    margin-bottom:30px
+    margin-bottom:30px;
+    position:relative;
 }
 footer ul p ,
 footer ul h3 {
